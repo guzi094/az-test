@@ -31,5 +31,5 @@ jobs:
           CONNECTION_STRING: ${{ secrets.APP_CONFIGURATION_CONNECTION_STRING }}
           ENVIRONMENT: ${{ github.event.inputs.target_env }}
         run: |
-          chmod +x ../scripts/update-feature-flag.sh
-          ../scripts/update-feature-flag.sh
+          chmod +x ./github/scripts/update-feature-flag.sh
+          ./github/./scripts/update-feature-flag.sh
