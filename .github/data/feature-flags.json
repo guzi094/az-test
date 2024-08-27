@@ -1,0 +1,1430 @@
+[
+  {
+    "key": ".appconfig.featureflag/USE_CLARITY",
+    "value": {
+      "id": "USE_CLARITY",
+      "description": "",
+      "enabled": true,
+      "conditions": {
+        "client_filters": []
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/ambiguous_verb",
+    "value": {
+      "id": "ambiguous_verb",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/clear_scope",
+    "value": {
+      "id": "clear_scope",
+      "description": "",
+      "enabled": true,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/comprehensiveness",
+    "value": {
+      "id": "comprehensiveness",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/detailedness",
+    "value": {
+      "id": "detailedness",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/div_criteria_purity",
+    "value": {
+      "id": "div_criteria_purity",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/exception",
+    "value": {
+      "id": "exception",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/group_abstraction",
+    "value": {
+      "id": "group_abstraction",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/group_validity",
+    "value": {
+      "id": "group_validity",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/inclusion",
+    "value": {
+      "id": "inclusion",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/needs_reflection",
+    "value": {
+      "id": "needs_reflection",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/non_func_req",
+    "value": {
+      "id": "non_func_req",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/reason_correctness",
+    "value": {
+      "id": "reason_correctness",
+      "description": "",
+      "enabled": true,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/reason_purity",
+    "value": {
+      "id": "reason_purity",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/reason_validity",
+    "value": {
+      "id": "reason_validity",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/req_expression",
+    "value": {
+      "id": "req_expression",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/req_inconsistency",
+    "value": {
+      "id": "req_inconsistency",
+      "description": "",
+      "enabled": true,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/req_purity",
+    "value": {
+      "id": "req_purity",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/spec_branch_coverage",
+    "value": {
+      "id": "spec_branch_coverage",
+      "description": "",
+      "enabled": true,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/spec_concreteness",
+    "value": {
+      "id": "spec_concreteness",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/spec_inconsistency",
+    "value": {
+      "id": "spec_inconsistency",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/timing_gap",
+    "value": {
+      "id": "timing_gap",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/typo",
+    "value": {
+      "id": "typo",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/unclear_target",
+    "value": {
+      "id": "unclear_target",
+      "description": "",
+      "enabled": false,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  },
+  {
+    "key": ".appconfig.featureflag/word_fluctuation",
+    "value": {
+      "id": "word_fluctuation",
+      "description": "",
+      "enabled": true,
+      "variants": [
+        {
+          "name": "trial_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "subaru_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "exmotion_value",
+          "configuration_value": "on"
+        },
+        {
+          "name": "aisan_value",
+          "configuration_value": "on"
+        }
+      ],
+      "allocation": {
+        "percentile": [
+          {
+            "variant": "trial_value",
+            "from": 0,
+            "to": 100
+          }
+        ],
+        "group": [
+          {
+            "variant": "trial_value",
+            "groups": ["trial"]
+          },
+          {
+            "variant": "subaru_value",
+            "groups": ["subaru"]
+          },
+          {
+            "variant": "exmotion_value",
+            "groups": ["exmotion"]
+          },
+          {
+            "variant": "aisan_value",
+            "groups": ["aisan"]
+          }
+        ],
+        "default_when_enabled": "trial_value",
+        "default_when_disabled": "trial_value"
+      },
+      "telemetry": {
+        "enabled": false
+      }
+    },
+    "content_type": "application/vnd.microsoft.appconfig.ff+json;charset=utf-8"
+  }
+]

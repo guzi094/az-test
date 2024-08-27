@@ -1,0 +1,32 @@
+name: Update app configuration feature flags
+
+on:
+  workflow_dispatch:
+    inputs:
+      target_env:
+        description: "データーを更新する環境を選択してください"
+        required: true
+        default: "staging"
+        type: choice
+        options:
+          - staging
+          - production
+
+jobs:
+  update-feature-flags:
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.target_env }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Azure CLI
+        uses: azure/cli@v2
+
+      - name: Run update feature flags az commands from a script
+        env:
+          CONNECTION_STRING: ${{ secrets.APP_CONFIGURATION_CONNECTION_STRING }}
+          ENVIRONMENT: ${{ github.event.inputs.target_env }}
+        run: |
+          chmod +x ../scripts/update-feature-flag.sh
+          ../scripts/update-feature-flag.sh
